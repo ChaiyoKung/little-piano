@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Play piano on web site.">
+    <meta name="keywords" content="piano, Piano, keyboard, Keyboard">
+    <meta name="author" content="ChaiyoKung">
+    <title>Little Piano</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/event.js" defer></script>
+</head>
+
+<body>
+    <div id="piano">
+        <div id="pianoption">
+            <div id="transpose">
+                <div class="btn" id="mm">-12</div>
+                <div class="btn" id="m">-1</div>
+                <div class="screen" id="screen">0</div>
+                <div class="btn" id="p">+1</div>
+                <div class="btn" id="pp">12</div>
+            </div>
+            <div id="sound">
+                <select id="sound_list">
+                    <option value="piano">Piano</option>
+                    <option value="guitar">Guitar</option>
+                </select>
+            </div>
+            <div id="sustain" class="active">Sustain</div>
+        </div>
+        <div id="pianokey">
+            <div data-note="Ab2" class="key black">A</div>
+            <div data-note="A2" class="key white">Z</div>
+            <div data-note="Bb2" class="key black">S</div>
+            <div data-note="B2" class="key white">X</div>
+            <div data-note="C3" class="key white">C</div>
+            <div data-note="Db3" class="key black">F</div>
+            <div data-note="D3" class="key white">V</div>
+            <div data-note="Eb3" class="key black">G</div>
+            <div data-note="E3" class="key white">B</div>
+            <div data-note="F3" class="key white">N</div>
+            <div data-note="Gb3" class="key black">J</div>
+            <div data-note="G3" class="key white">M</div>
+            <div data-note="Ab3" class="key black">K</div>
+            <div data-note="A3" class="key white">&lt;</div>
+            <div data-note="Bb3" class="key black">L</div>
+            <div data-note="B3" class="key white">&gt;</div>
+            <div data-note="C4" class="key white">?</div>
+            <div data-note="Db4" class="key black">"</div>
+        </div>
+        <div class="credit">&copy; 2019 ChaiyoKung</div>
+    </div>
+    <i class='warning'></i>
+
+    <audio class="audioName" id="Ab2" src="sound/piano/209.wav"></audio>
+    <audio class="audioName" id="A2" src="sound/piano/210.wav"></audio>
+    <audio class="audioName" id="Bb2" src="sound/piano/211.wav"></audio>
+    <audio class="audioName" id="B2" src="sound/piano/212.wav"></audio>
+    <audio class="audioName" id="C3" src="sound/piano/301.wav"></audio>
+    <audio class="audioName" id="Db3" src="sound/piano/302.wav"></audio>
+    <audio class="audioName" id="D3" src="sound/piano/303.wav"></audio>
+    <audio class="audioName" id="Eb3" src="sound/piano/304.wav"></audio>
+    <audio class="audioName" id="E3" src="sound/piano/305.wav"></audio>
+    <audio class="audioName" id="F3" src="sound/piano/306.wav"></audio>
+    <audio class="audioName" id="Gb3" src="sound/piano/307.wav"></audio>
+    <audio class="audioName" id="G3" src="sound/piano/308.wav"></audio>
+    <audio class="audioName" id="Ab3" src="sound/piano/309.wav"></audio>
+    <audio class="audioName" id="A3" src="sound/piano/310.wav"></audio>
+    <audio class="audioName" id="Bb3" src="sound/piano/311.wav"></audio>
+    <audio class="audioName" id="B3" src="sound/piano/312.wav"></audio>
+    <audio class="audioName" id="C4" src="sound/piano/401.wav"></audio>
+    <audio class="audioName" id="Db4" src="sound/piano/402.wav"></audio>
+</body>
+
+</html>

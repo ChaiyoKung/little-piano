@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pianoption {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pianoption #transpose {
+    display: flex;
+}
+
+#pianoption #transpose .btn {
+    padding: 8px 16px;
+    background-color: #121212;
+    color: slateblue;
+    border: 2px solid slateblue;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#pianoption #transpose .btn:hover {
+    background-color: #060606;
+}
+
+#pianoption #transpose #m,
+#pianoption #transpose #p {
+    margin: 0 -1px;
+}
+
+#pianoption #transpose .screen {
+    width: 50px;
+    padding: 8px 16px;
+    text-align: center;
+    color: white;
+    background-color: #060606;
+    border: 2px solid slateblue;
+}
+
+#pianoption #sound_list {
+    font-size: 1em;
+    padding: 8px 16px;
+    background-color: #060606;
+    color: white;
+    border: 2px solid slateblue;
+    width: 300px;
+    cursor: pointer;
+}
+
+#pianoption #sustain {
+    background-color: #121212;
+    width: fit-content;
+    padding: 8px 16px;
+    border: 2px solid #505050;
+    color: #505050;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#pianoption #sustain.active {
+    border-color: slateblue;
+    color: slateblue;
+}
+
+#pianoption #sustain:hover {
+    background-color: #060606;
+}
+
+#pianokey {
+    display: flex;
+}
+
+#pianokey .key {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+#pianokey .key.white {
+    width: 80px;
+    height: 300px;
+    background-color: white;
+    margin: 0 1px;
+}
+
+#pianokey .key.white.active {
+    background-color: rgb(225, 225, 225)
+}
+
+#pianokey .key.black {
+    width: 40px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+    z-index: 1;
+}
+
+#pianokey .key.black.active {
+    background-color: rgb(20, 20, 20)
+}
+
+#piano .credit {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 1024px) {
+    .warning::after {
+        content: "May not available on tablet and mobile";
+    }
+
+    .warning {
+        font-size: 0.8em;
+        margin-top: 10px;
+        padding: 8px 16px;
+        color: orangered;
+    }
+}
